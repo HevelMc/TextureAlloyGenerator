@@ -1,0 +1,17 @@
+{
+  "name": "titane",
+  "type": "palette",
+  "moonaris": {
+    "vanilla_tool_tier": "diamond",
+    "vanilla_tool_alloy_only": true,
+    "ingot_shape": "diamond"
+  },
+  "palette": [
+    "#260909",
+    "#3F0E0E",
+    "#491515",
+    "#892727",
+    "#C72B2B",
+    "#EB3333"
+  ]
+}

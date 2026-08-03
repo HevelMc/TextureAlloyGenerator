@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# Virtual environments
+.venv/
+.venv-decompile/
+venv/
+env/
+
+# Generated output & external caches
+.cache/
+generated/
+
+# Vanilla / Minecraft sprites (populate locally in templates/vanilla_refs/)
+templates/vanilla_refs/*.png
+templates/vanilla_refs/*.mcmeta
+
+# Copied at runtime from vanilla_refs into TiC template root
+templates/tic/assets/minecraft/
+
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local config
+.env

@@ -1,0 +1,14 @@
+{
+  "name": "breeze_rod",
+  "type": "palette",
+  "palette": [
+    { "grey": 127, "color": "#2f527f" },
+    { "grey": 135, "color": "#3e5e87" },
+    { "grey": 157, "color": "#576c9d" },
+    { "grey": 171, "color": "#6c76ab" },
+    { "grey": 196, "color": "#7a82c4" },
+    { "grey": 201, "color": "#bfafc9" },
+    { "grey": 202, "color": "#b5a5ca" },
+    { "grey": 211, "color": "#958dd3" }
+  ]
+}

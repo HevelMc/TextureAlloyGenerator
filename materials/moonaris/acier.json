@@ -1,0 +1,16 @@
+{
+  "name": "acier",
+  "type": "palette",
+  "moonaris": {
+    "vanilla_tool_tier": "iron",
+    "ingot_shape": "iron_ingot"
+  },
+  "palette": [
+    "#000000",
+    "#0E0E0E",
+    "#1E1E1E",
+    "#3C3C3C",
+    "#727272",
+    "#7D7D7D"
+  ]
+}

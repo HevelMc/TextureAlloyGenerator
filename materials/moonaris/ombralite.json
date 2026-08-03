@@ -1,0 +1,16 @@
+{
+  "name": "ombralite",
+  "type": "palette",
+  "moonaris": {
+    "vanilla_tool_tier": "diamond",
+    "ingot_shape": "nether_brick"
+  },
+  "palette": [
+    "#000000",
+    "#0B0704",
+    "#20150C",
+    "#2C1C11",
+    "#4B2A11",
+    "#88532C"
+  ]
+}

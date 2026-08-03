@@ -1,0 +1,130 @@
+{
+  "namespace": "moonaris",
+  "pack": {
+    "description": [
+      {"text": "           🌙 Moonaris 🌙\n ▸ ", "color": "#C8B6FF"},
+      {"text": "Items customs des alliages", "color": "#53FAFA"},
+      {"text": " ◂", "color": "#C8B6FF"}
+    ],
+    "pack_format": 88,
+    "min_format": 88,
+    "max_format": 89
+  },
+  "gui_contexts": ["gui", "ground", "fixed", "on_shelf"],
+  "cmd_bases": {
+    "fishing_rod": 20219,
+    "bow": 20230,
+    "shield": 20236,
+    "trident": 20242,
+    "crossbow": 20248,
+    "mace": 20254
+  },
+  "tiers": ["iron", "diamond", "netherite"],
+  "tools": ["pickaxe", "sword", "axe", "shovel", "hoe"],
+  "armor_pieces": ["helmet", "chestplate", "leggings", "boots"],
+  "materials": [
+    {
+      "name": "bronze",
+      "display": "Bronze",
+      "tier": "iron",
+      "ingot_item": "copper_ingot",
+      "cmds": {"ingot": 10001, "tool": 20000, "armor": 20006, "spear": 20005, "elytra": 20200},
+      "glint": false
+    },
+    {
+      "name": "acier",
+      "display": "Acier",
+      "tier": "iron",
+      "ingot_item": "iron_ingot",
+      "cmds": {"ingot": 10002, "tool": 20010, "armor": 20080, "spear": 20006, "elytra": 20201},
+      "glint": false
+    },
+    {
+      "name": "ombralite",
+      "display": "Ombralite",
+      "tier": "diamond",
+      "ingot_item": "nether_brick",
+      "cmds": {"ingot": 10003, "tool": 20020, "armor": 20090, "spear": 20007, "elytra": 20202},
+      "glint": true
+    },
+    {
+      "name": "titane",
+      "display": "Titane",
+      "tier": "diamond",
+      "ingot_item": "diamond",
+      "cmds": {"ingot": 10004, "tool": 20030, "armor": 20100, "spear": 20008, "elytra": 20203},
+      "glint": true
+    },
+    {
+      "name": "obsidian",
+      "display": "Obsidian",
+      "tier": "netherite",
+      "ingot_item": "netherite_ingot",
+      "cmds": {"ingot": 10005, "tool": 20040, "armor": 20110, "spear": 20009, "elytra": 20204},
+      "glint": true
+    },
+    {
+      "name": "moonarium",
+      "display": "Moonarium",
+      "tier": "netherite",
+      "ingot_item": "echo_shard",
+      "cmds": {"ingot": 10006, "tool": 20050, "armor": 20120, "spear": 20010, "elytra": 20205},
+      "glint": true
+    }
+  ],
+  "model_parents": {
+    "ingot": "minecraft:item/generated",
+    "pickaxe": "minecraft:item/handheld",
+    "sword": "minecraft:item/handheld",
+    "axe": "minecraft:item/handheld",
+    "shovel": "minecraft:item/handheld",
+    "hoe": "minecraft:item/handheld",
+    "helmet": "minecraft:item/generated",
+    "chestplate": "minecraft:item/generated",
+    "leggings": "minecraft:item/generated",
+    "boots": "minecraft:item/generated",
+    "elytra": "minecraft:item/generated",
+    "trident": "minecraft:item/generated",
+    "spear": "minecraft:item/generated",
+    "spear_in_hand": "minecraft:item/spear_in_hand",
+    "mace": "minecraft:item/handheld_mace",
+    "bow": "minecraft:item/bow",
+    "bow_pulling_0": "minecraft:item/bow_pulling_0",
+    "bow_pulling_1": "minecraft:item/bow_pulling_1",
+    "bow_pulling_2": "minecraft:item/bow_pulling_2",
+    "fishing_rod": "minecraft:item/fishing_rod",
+    "fishing_rod_cast": "minecraft:item/fishing_rod_cast",
+    "crossbow_standby": "minecraft:item/crossbow",
+    "crossbow_pulling_0": "minecraft:item/crossbow_pulling_0",
+    "crossbow_pulling_1": "minecraft:item/crossbow_pulling_1",
+    "crossbow_pulling_2": "minecraft:item/crossbow_pulling_2",
+    "crossbow_arrow": "minecraft:item/crossbow_arrow",
+    "crossbow_firework": "minecraft:item/crossbow_firework",
+    "shield": "minecraft:item/generated"
+  },
+  "shield_displays": {
+    "entity": {
+      "gui_light": "front",
+      "display": {
+        "thirdperson_righthand": {"rotation": [0, 90, 0], "translation": [10, 6, -4], "scale": [1, 1, 1]},
+        "thirdperson_lefthand": {"rotation": [0, 90, 0], "translation": [10, 6, 12], "scale": [1, 1, 1]},
+        "firstperson_righthand": {"rotation": [0, 180, 5], "translation": [-10, 2, -10], "scale": [1.25, 1.25, 1.25]},
+        "firstperson_lefthand": {"rotation": [0, 180, 5], "translation": [10, 0, -10], "scale": [1.25, 1.25, 1.25]},
+        "gui": {"rotation": [15, -25, -5], "translation": [2, 3, 0], "scale": [0.65, 0.65, 0.65]},
+        "fixed": {"rotation": [0, 180, 0], "translation": [-4.5, 4.5, -5], "scale": [0.55, 0.55, 0.55]},
+        "on_shelf": {"rotation": [0, 0, 0], "translation": [11, 18.5, 8.7], "scale": [1.4, 1.4, 1.4]},
+        "ground": {"rotation": [0, 0, 0], "translation": [2, 4, 2], "scale": [0.25, 0.25, 0.25]}
+      }
+    },
+    "blocking": {
+      "gui_light": "front",
+      "display": {
+        "thirdperson_righthand": {"rotation": [45, 155, 0], "translation": [-3.49, 11, -2], "scale": [1, 1, 1]},
+        "thirdperson_lefthand": {"rotation": [45, 155, 0], "translation": [11.51, 7, 2.5], "scale": [1, 1, 1]},
+        "firstperson_righthand": {"rotation": [0, 180, -5], "translation": [-15, 5, -11], "scale": [1.25, 1.25, 1.25]},
+        "firstperson_lefthand": {"rotation": [0, 180, -5], "translation": [5, 5, -11], "scale": [1.25, 1.25, 1.25]},
+        "gui": {"rotation": [15, -25, -5], "translation": [2, 3, 0], "scale": [0.65, 0.65, 0.65]}
+      }
+    }
+  }
+}

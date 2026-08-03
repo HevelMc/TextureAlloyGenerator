@@ -1,0 +1,16 @@
+{
+  "name": "bronze",
+  "type": "palette",
+  "moonaris": {
+    "vanilla_tool_tier": "iron",
+    "ingot_shape": "copper_ingot"
+  },
+  "palette": [
+    "#3F261B",
+    "#563221",
+    "#7A4C35",
+    "#A06A48",
+    "#C48C5E",
+    "#DDAF73"
+  ]
+}

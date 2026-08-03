@@ -1,0 +1,15 @@
+{
+  "name": "moonarium",
+  "type": "hybrid",
+  "moonaris": {
+    "vanilla_tool_tier": "netherite",
+    "ingot_shape": "echo_shard"
+  },
+  "palette": [
+    { "grey": 0, "texture": "block/sculk" },
+    { "grey": 72, "texture": "block/sculk" },
+    { "grey": 128, "texture": "block/sculk_catalyst_top" },
+    { "grey": 254, "texture": "block/sculk_catalyst_top" },
+    { "grey": 255, "texture": "block/soul_fire" }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "obsidian",
+  "type": "palette",
+  "moonaris": {
+    "vanilla_tool_tier": "netherite",
+    "ingot_shape": "netherite_ingot"
+  },
+  "palette": [
+    "#000000",
+    "#06030B",
+    "#100C1C",
+    "#271E3D",
+    "#3B2754",
+    "#503572"
+  ]
+}
