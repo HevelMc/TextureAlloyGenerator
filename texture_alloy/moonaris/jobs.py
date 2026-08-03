@@ -112,6 +112,8 @@ def build_moonaris_jobs(
                 tpl_path = VANILLA_CACHE / "shield_base.png"
             elif source == "vanilla_mace":
                 tpl_path = VANILLA_CACHE / "mace.png"
+            elif source == "vanilla_pearl":
+                tpl_path = VANILLA_CACHE / "ghast_tear.png"
             elif source == "tconstruct":
                 if tc_key is None:
                     missing.append(f"tconstruct:{category}:{template_name}")

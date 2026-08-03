@@ -9,6 +9,7 @@ from pathlib import Path
 from texture_alloy.catalog import MATERIALS, NAMESPACE, PACK_META
 from texture_alloy.pack.models import write_item_models, write_shield_items
 from texture_alloy.pack.routing import write_item_routing
+from texture_alloy.paths import PACK_ICON
 
 
 def write_equipment(pack: Path) -> int:
@@ -45,8 +46,15 @@ def write_pack_meta(pack: Path) -> None:
     )
 
 
+def write_pack_icon(pack: Path) -> None:
+    if not PACK_ICON.is_file():
+        raise FileNotFoundError(f"Pack icon not found: {PACK_ICON}")
+    shutil.copy2(PACK_ICON, pack / "pack.png")
+
+
 def write_pack(pack: Path) -> dict[str, int]:
     write_pack_meta(pack)
+    write_pack_icon(pack)
     return {
         "models": write_item_models(pack),
         "shield_items": write_shield_items(pack),
@@ -57,7 +65,7 @@ def write_pack(pack: Path) -> dict[str, int]:
 
 def sync_pack(staging: Path, target: Path) -> None:
     target.mkdir(parents=True, exist_ok=True)
-    for rel in ("assets", "pack.mcmeta"):
+    for rel in ("assets", "pack.mcmeta", "pack.png"):
         src = staging / rel
         dst = target / rel
         if not src.exists():

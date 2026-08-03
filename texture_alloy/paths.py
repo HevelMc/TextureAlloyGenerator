@@ -8,6 +8,7 @@ from texture_alloy.env import ROOT, _env_path
 
 CONFIG = ROOT / "config"
 GENERATOR_MANIFEST = CONFIG / "moonaris_generator.json"
+PACK_ICON = CONFIG / "pack.png"
 TIC_TEMPLATES = ROOT / "templates" / "tic"
 VANILLA_REFS = ROOT / "templates" / "vanilla_refs"
 MATERIALS = ROOT / "materials" / "moonaris"

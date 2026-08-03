@@ -26,6 +26,7 @@ class MaterialDef:
     armor_cmd: int
     spear_cmd: int
     elytra_cmd: int
+    pearl_cmd: int | None = None
     glint: bool = False
 
 
@@ -46,6 +47,7 @@ def _material_from_dict(data: dict[str, Any]) -> MaterialDef:
         armor_cmd=cmds["armor"],
         spear_cmd=cmds["spear"],
         elytra_cmd=cmds["elytra"],
+        pearl_cmd=cmds.get("pearl"),
         glint=bool(data.get("glint", False)),
     )
 
@@ -82,6 +84,10 @@ def material_index(name: str) -> int:
 
 def materials_for_tier(tier: str) -> tuple[MaterialDef, ...]:
     return tuple(material for material in MATERIALS if material.tier == tier)
+
+
+def pearl_materials() -> tuple[MaterialDef, ...]:
+    return tuple(material for material in MATERIALS if material.pearl_cmd is not None)
 
 
 def item_name_json(display: str) -> str:

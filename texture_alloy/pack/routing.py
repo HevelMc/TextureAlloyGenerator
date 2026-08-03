@@ -19,6 +19,7 @@ from texture_alloy.catalog import (
     MaterialDef,
     material_index,
     materials_for_tier,
+    pearl_materials,
 )
 from texture_alloy.pack.builders import (
     cmd_entry,
@@ -289,6 +290,14 @@ def _elytra_routing() -> dict[str, Any]:
     return wrap_model(range_dispatch(entries, simple_model("minecraft:item/elytra")))
 
 
+def _pearl_routing() -> dict[str, Any]:
+    entries = [
+        cmd_entry(material.pearl_cmd, simple_model(model_ref(material.name, "pearl")))
+        for material in pearl_materials()
+    ]
+    return wrap_model(range_dispatch(entries, simple_model("minecraft:item/ghast_tear")))
+
+
 def _load_vanilla_model(name: str) -> dict:
     path = VANILLA_REFS / f"{name}.json"
     return json.loads(path.read_text(encoding="utf-8"))
@@ -400,6 +409,7 @@ def write_item_routing(pack: Path) -> int:
         "fishing_rod.json": _fishing_rod_routing(),
         "mace.json": _mace_routing(),
         "elytra.json": _elytra_routing(),
+        "ghast_tear.json": _pearl_routing(),
         "trident.json": trident_routing(),
     }
     for filename, payload in routing_files.items():

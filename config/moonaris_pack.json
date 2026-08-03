@@ -12,6 +12,7 @@
   },
   "gui_contexts": ["gui", "ground", "fixed", "on_shelf"],
   "cmd_bases": {
+    "pearl": 20210,
     "fishing_rod": 20219,
     "bow": 20230,
     "shield": 20236,
@@ -36,7 +37,7 @@
       "display": "Acier",
       "tier": "iron",
       "ingot_item": "iron_ingot",
-      "cmds": {"ingot": 10002, "tool": 20010, "armor": 20080, "spear": 20006, "elytra": 20201},
+      "cmds": {"ingot": 10002, "tool": 20010, "armor": 20080, "spear": 20006, "elytra": 20201, "pearl": 20210},
       "glint": false
     },
     {
@@ -44,7 +45,7 @@
       "display": "Ombralite",
       "tier": "diamond",
       "ingot_item": "nether_brick",
-      "cmds": {"ingot": 10003, "tool": 20020, "armor": 20090, "spear": 20007, "elytra": 20202},
+      "cmds": {"ingot": 10003, "tool": 20020, "armor": 20090, "spear": 20007, "elytra": 20202, "pearl": 20211},
       "glint": true
     },
     {
@@ -52,7 +53,7 @@
       "display": "Titane",
       "tier": "diamond",
       "ingot_item": "diamond",
-      "cmds": {"ingot": 10004, "tool": 20030, "armor": 20100, "spear": 20008, "elytra": 20203},
+      "cmds": {"ingot": 10004, "tool": 20030, "armor": 20100, "spear": 20008, "elytra": 20203, "pearl": 20212},
       "glint": true
     },
     {
@@ -60,7 +61,7 @@
       "display": "Obsidian",
       "tier": "netherite",
       "ingot_item": "netherite_ingot",
-      "cmds": {"ingot": 10005, "tool": 20040, "armor": 20110, "spear": 20009, "elytra": 20204},
+      "cmds": {"ingot": 10005, "tool": 20040, "armor": 20110, "spear": 20009, "elytra": 20204, "pearl": 20213},
       "glint": true
     },
     {
@@ -68,7 +69,7 @@
       "display": "Moonarium",
       "tier": "netherite",
       "ingot_item": "echo_shard",
-      "cmds": {"ingot": 10006, "tool": 20050, "armor": 20120, "spear": 20010, "elytra": 20205},
+      "cmds": {"ingot": 10006, "tool": 20050, "armor": 20120, "spear": 20010, "elytra": 20205, "pearl": 20214},
       "glint": true
     }
   ],
@@ -84,6 +85,7 @@
     "leggings": "minecraft:item/generated",
     "boots": "minecraft:item/generated",
     "elytra": "minecraft:item/generated",
+    "pearl": "minecraft:item/generated",
     "trident": "minecraft:item/generated",
     "spear": "minecraft:item/generated",
     "spear_in_hand": "minecraft:item/spear_in_hand",

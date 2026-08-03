@@ -15,9 +15,10 @@ def test_generate_bronze(tmp_path):
 
 def test_write_pack_json(tmp_path):
     counts = write_pack(tmp_path)
-    assert counts["models"] == 180
+    assert counts["models"] == 185
     assert counts["shield_items"] == 6
     assert counts["equipment"] == 12
-    assert counts["routing"] == 43
+    assert counts["routing"] == 44
     assert (tmp_path / "pack.mcmeta").is_file()
+    assert (tmp_path / "pack.png").is_file()
     assert (tmp_path / "assets" / "minecraft" / "items" / "bow.json").is_file()

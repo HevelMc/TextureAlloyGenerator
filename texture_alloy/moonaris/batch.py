@@ -116,6 +116,23 @@ def _composite_vanilla_item(
     )
 
 
+def _composite_pearl(
+    job: MoonarisJob,
+    opts: dict,
+    tool_tier: str,
+    wood: Material,
+    breeze: Material,
+    input_root: Path,
+) -> np.ndarray:
+    return composite_vanilla_sprite(
+        "ghast_tear",
+        job.material,
+        tier=None,
+        alloy_only=True,
+        cache_dir=VANILLA_CACHE,
+    )
+
+
 def _composite_handheld(
     job: MoonarisJob,
     opts: dict,
@@ -189,6 +206,7 @@ SOURCE_COMPOSITORS: dict[str, CompositorFn] = {
     "vanilla_spear_in_hand": _composite_spear_in_hand,
     "vanilla_shield_entity": _composite_shield_entity,
     "vanilla_item": _composite_vanilla_item,
+    "vanilla_pearl": _composite_pearl,
     "tconstruct": _composite_tconstruct,
 }
 

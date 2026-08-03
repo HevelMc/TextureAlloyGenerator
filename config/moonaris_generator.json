@@ -30,6 +30,7 @@
     { "template": "shield", "category": "item", "source": "tconstruct" },
     { "template": "shield_entity", "category": "item", "source": "vanilla_shield_entity" },
     { "template": "elytra", "category": "item", "source": "vanilla_item" },
+    { "template": "pearl", "category": "item", "source": "vanilla_pearl", "exclude_materials": ["bronze"] },
     { "template": "ingot", "category": "equipment_humanoid", "source": "tconstruct" },
     { "template": "ingot", "category": "equipment_leggings", "source": "tconstruct" },
     { "template": "ingot", "category": "equipment_wings", "source": "tconstruct" }

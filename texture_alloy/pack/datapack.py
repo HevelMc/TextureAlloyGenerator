@@ -56,7 +56,7 @@ def _armor_give(material: MaterialDef, piece: str, slot: str, label: str) -> str
 
 
 def _material_give_lines(material: MaterialDef) -> list[str]:
-    return [
+    lines = [
         f"# Moonaris — {material.name}",
         _give_line(
             material,
@@ -67,6 +67,11 @@ def _material_give_lines(material: MaterialDef) -> list[str]:
         _tool_give(material, "pickaxe", "Pickaxe"),
         _armor_give(material, "helmet", "head", "Helmet"),
     ]
+    if material.pearl_cmd is not None:
+        lines.append(
+            _give_line(material, "ghast_tear", material.pearl_cmd, f"{material.display} Pearl")
+        )
+    return lines
 
 
 def write_datapack(root: Path) -> None:

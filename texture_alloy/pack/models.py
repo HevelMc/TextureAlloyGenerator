@@ -37,6 +37,8 @@ def write_item_models(pack: Path) -> int:
     for material in MATERIALS:
         name = material.name
         for variant in MODEL_VARIANTS:
+            if variant == "pearl" and material.pearl_cmd is None:
+                continue
             if variant == "ingot":
                 path = model_dir / f"{name}.json"
                 _write_json(path, _parent_model(name, variant))
