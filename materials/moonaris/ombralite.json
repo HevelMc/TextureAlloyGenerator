@@ -3,14 +3,14 @@
   "type": "palette",
   "moonaris": {
     "vanilla_tool_tier": "diamond",
-    "ingot_shape": "nether_brick"
+    "ingot_shape": "iron_ingot"
   },
   "palette": [
     "#000000",
-    "#0B0704",
-    "#20150C",
-    "#2C1C11",
-    "#4B2A11",
-    "#88532C"
+    "#08060E",
+    "#141723",
+    "#31394D",
+    "#4A4A6A",
+    "#646590"
   ]
 }
